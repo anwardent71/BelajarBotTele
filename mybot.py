@@ -18,8 +18,8 @@ class mybot:
 
     @Mybot.message_handler(commands=['start', 'help'])
     def start(message):
-        #photo = open('')
-        #Mybot.send_photo(message.from_user.id, photo)
+        photo = open('img/icon.jpg', 'rb')
+        Mybot.send_photo(message.from_user.id, photo)
         teks = mytoken.SAPA + "\n"+"✍ Disini Aku akan melakukan apa yang Aku bisa"\
                +"\n👨‍💻 Admin & Developer @anwar_1410 "+"\n" "📅 Hari ini tanggal "+str(waktusekarang)+"\n" "🏫 SMK Taruna Bhakti"
         Mybot.reply_to(message, teks)
